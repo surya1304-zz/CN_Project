@@ -6,6 +6,7 @@ def rando():
     dataset = pd.read_csv('regression_small.csv')
     X = dataset.iloc[:, 1:2].values
     y = dataset.iloc[:, 2].values
+    y = y/10000
 
     # Fitting Random Forest Regression to the dataset
     from sklearn.ensemble import RandomForestRegressor
@@ -21,7 +22,7 @@ def rando():
     X_grid = X_grid.reshape((len(X_grid), 1))
     plt.scatter(X, y, color = 'red')
     plt.plot(X_grid, regressor.predict(X_grid), color = 'blue')
-    plt.title('Truth or Bluff (Random Forest Regression)')
-    plt.xlabel('Position level')
-    plt.ylabel('Salary')
+    plt.title('Predicting the new values in the buffer')
+    plt.xlabel('values in previous buffer')
+    plt.ylabel('router')
     plt.show()

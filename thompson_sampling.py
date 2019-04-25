@@ -31,7 +31,7 @@ def thompson():
 
     # Visualising the results - Histogram
     plt.hist(router_selected)
-    plt.title('Histogram of ads selections')
-    plt.xlabel('Ads')
-    plt.ylabel('Number of times each ad was selected')
+    plt.title('Histogram of routers selections')
+    plt.xlabel('routers')
+    plt.ylabel('Number of times each router was selected')
     plt.show()
