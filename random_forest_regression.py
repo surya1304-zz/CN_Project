@@ -6,7 +6,7 @@ def rando():
     dataset = pd.read_csv('regression_small.csv')
     X = dataset.iloc[:, 1:2].values
     y = dataset.iloc[:, 2].values
-    y = y/10000
+    y = y/100000
 
     # Fitting Random Forest Regression to the dataset
     from sklearn.ensemble import RandomForestRegressor
