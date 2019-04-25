@@ -4,7 +4,7 @@ def kmeans():
 
     # Importing the dataset
     dataset = pd.read_csv('Clustering_small.csv')
-    X = dataset.iloc[:, [3, 4]].values
+    X = dataset.iloc[:, [2, 3]].values
 
     from sklearn.cluster import KMeans
 
@@ -29,3 +29,7 @@ def kmeans():
     plt.ylabel('Buffer_size')
     plt.legend()
     plt.show()
+
+
+if __name__ == '__main__':
+    kmeans()

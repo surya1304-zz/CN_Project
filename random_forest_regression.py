@@ -26,3 +26,7 @@ def rando():
     plt.xlabel('values in previous buffer')
     plt.ylabel('router')
     plt.show()
+
+
+if __name__ == '__main__':
+    rando()
